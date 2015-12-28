@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{1f3c5265-fb37-432a-bbd2-0fd1fbd408d5}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{0c3287f6-7b8a-4571-9778-9ea3d7c9d61b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{8aa028b2-7ea6-4bc6-a81c-b934f99abc3b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{3791a0ad-82a3-43e3-acd2-42dc9456056e}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProjectOxford.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameCaptor.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameAnalyzer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="release.mak">
+      <Filter>Make files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FrameCaptor.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectOxford.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameAnalyzer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,3 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
 # Compiled Object files
 *.slo
 *.lo
@@ -26,3 +29,10 @@
 *.exe
 *.out
 *.app
+
+/CodeDB
+*.sdf
+*.opendb
+/.vs/ProjectOxford/v14
+ProjectOxford/Debug/*
+ProjectOxford/*.old
