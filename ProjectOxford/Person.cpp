@@ -1,15 +1,28 @@
-#include "Person.h"
+#include "person.h"
 
-Person::Person()
+person::person()
 {
-	IsKnown = false;
-	Name = "Unknown Person";
+	mIsKnown = false;
+	mName = "Unknown Person";
 }
 
 
-Person::~Person()
+person::person(string pName, bool pIsKnown)
+{
+	mIsKnown = pIsKnown;
+	mName = pName;
+}
+
+person::~person()
 {
 }
 
-std::string Name;
-bool IsKnown;
+string person::get_name()
+{
+	return mName;
+}
+
+bool person::is_known()
+{
+	return mIsKnown;
+}

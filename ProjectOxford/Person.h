@@ -2,12 +2,18 @@
 
 #include <string>
 
-class Person
+using namespace std;
+
+class person
 {
 public:
-	Person();
-	~Person();
-	std::string Name;
-	bool IsKnown;
+	person();
+	person(string pName, bool pIsKnown);
+	~person();
+	string get_name();
+	bool is_known();
+private:
+	string mName;
+	bool mIsKnown;
 };
 

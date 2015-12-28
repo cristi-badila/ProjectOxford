@@ -19,16 +19,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProjectOxford.cpp">
+    <ClCompile Include="console_logger.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="FrameCaptor.cpp">
+    <ClCompile Include="frame_analyzer.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="FrameAnalyzer.cpp">
+    <ClCompile Include="frame_captor.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
-    <ClCompile Include="Person.cpp">
+    <ClCompile Include="person.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="project_oxford.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -42,16 +45,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FrameCaptor.h">
+    <ClInclude Include="console_logger.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="ProjectOxford.h">
+    <ClInclude Include="frame_analyzer.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="FrameAnalyzer.h">
+    <ClInclude Include="frame_captor.h">
       <Filter>Header files</Filter>
     </ClInclude>
-    <ClInclude Include="Person.h">
+    <ClInclude Include="project_oxford.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="person.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

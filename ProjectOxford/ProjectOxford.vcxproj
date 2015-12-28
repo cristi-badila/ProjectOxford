@@ -63,10 +63,11 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FrameAnalyzer.cpp" />
-    <ClCompile Include="FrameCaptor.cpp" />
-    <ClCompile Include="Person.cpp" />
-    <ClCompile Include="ProjectOxford.cpp" />
+    <ClCompile Include="frame_analyzer.cpp" />
+    <ClCompile Include="frame_captor.cpp" />
+    <ClCompile Include="console_logger.cpp" />
+    <ClCompile Include="person.cpp" />
+    <ClCompile Include="project_oxford.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="debug.mak" />
@@ -74,10 +75,11 @@
     <None Include="release.mak" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FrameAnalyzer.h" />
-    <ClInclude Include="FrameCaptor.h" />
-    <ClInclude Include="Person.h" />
-    <ClInclude Include="ProjectOxford.h" />
+    <ClInclude Include="frame_analyzer.h" />
+    <ClInclude Include="frame_captor.h" />
+    <ClInclude Include="console_logger.h" />
+    <ClInclude Include="person.h" />
+    <ClInclude Include="project_oxford.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
