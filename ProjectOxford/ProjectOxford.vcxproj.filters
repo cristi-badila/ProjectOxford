@@ -43,6 +43,9 @@
     <None Include="release.mak">
       <Filter>Make files</Filter>
     </None>
+    <None Include="windows.mak">
+      <Filter>Make files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="console_logger.h">
@@ -60,5 +63,13 @@
     <ClInclude Include="person.h">
       <Filter>Header files</Filter>
     </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\testPhoto.jpg">
+      <Filter>Resource files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

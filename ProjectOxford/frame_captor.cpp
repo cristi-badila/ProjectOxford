@@ -1,4 +1,5 @@
 #include "frame_captor.h"
+#include "console_logger.h"
 
 frame_captor::frame_captor()
 {	
@@ -9,10 +10,25 @@ frame_captor::~frame_captor()
 {
 }
 
-std::vector<short> frame_captor::capture()
+vector<char> frame_captor::capture()
 {
-	std::vector<short> bytes;
-	bytes.push_back(10);
+	console_logger logger;
 	
-	return bytes;
+	vector<char> fileBytes;
+	ifstream photoFile(PHOTO_FILE_PATH, ios::in | ios::binary | ios::ate);	
+	if (photoFile.is_open())
+	{
+		auto size = photoFile.tellg();
+		fileBytes = vector<char>(size);
+		photoFile.seekg(0, ios::beg);
+		photoFile.read(&fileBytes[0], size);
+		photoFile.close();		
+		logger.log(string("Read file ") + string(PHOTO_FILE_PATH));
+	}
+	else
+	{
+		logger.log(string("Could not open ") + string(PHOTO_FILE_PATH));
+	}
+
+	return fileBytes;	
 }

@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 # Compiled Object files
@@ -35,4 +35,6 @@
 *.opendb
 /.vs/ProjectOxford/v14
 ProjectOxford/Debug/*
-ProjectOxford/*.old
+*.old
+*.dep
+*.log

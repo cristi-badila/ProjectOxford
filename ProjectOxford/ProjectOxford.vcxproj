@@ -9,6 +9,10 @@
       <Configuration>Release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Windows|Win32">
+      <Configuration>Windows</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{620AF32F-FAFD-429F-B3D4-0DBED6F00F9A}</ProjectGuid>
@@ -22,6 +26,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Windows|Win32'">
+    <ConfigurationType>Makefile</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -60,6 +68,18 @@
     <ReferencePath />
     <LibraryPath />
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows|Win32'">
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)ProjectOxford-Windows.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakeIncludeSearchPath>d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include\c++;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include\c++\x86_64-w64-mingw32;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include\c++\backward;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include-fixed;d:\sysgcc\threads-mingw64\x86_64-w64-mingw32\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Windows.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Windows;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -73,13 +93,18 @@
     <None Include="debug.mak" />
     <None Include="Makefile" />
     <None Include="release.mak" />
+    <None Include="windows.mak" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="config.h" />
     <ClInclude Include="frame_analyzer.h" />
     <ClInclude Include="frame_captor.h" />
     <ClInclude Include="console_logger.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="project_oxford.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\testPhoto.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
