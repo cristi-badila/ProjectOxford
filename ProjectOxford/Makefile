@@ -35,7 +35,7 @@ error:
 	$(error Invalid configuration, please check your inputs)
 endif
 
-SOURCEFILES := face.cpp frame_analyzer.cpp frame_captor.cpp console_logger.cpp oxford_client.cpp person.cpp project_oxford.cpp
+SOURCEFILES := face.cpp frame_analyzer.cpp frame_captor.cpp console_logger.cpp jsoncpp.cpp oxford_client.cpp person.cpp project_oxford.cpp
 EXTERNAL_LIBS := 
 EXTERNAL_LIBS_COPIED := $(foreach lib, $(EXTERNAL_LIBS),$(BINARYDIR)/$(notdir $(lib)))
 

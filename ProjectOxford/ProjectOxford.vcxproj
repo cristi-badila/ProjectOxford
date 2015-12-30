@@ -89,6 +89,7 @@
     <ClCompile Include="frame_analyzer.cpp" />
     <ClCompile Include="frame_captor.cpp" />
     <ClCompile Include="console_logger.cpp" />
+    <ClCompile Include="jsoncpp.cpp" />
     <ClCompile Include="oxford_client.cpp" />
     <ClCompile Include="person.cpp" />
     <ClCompile Include="project_oxford.cpp" />
@@ -105,6 +106,8 @@
     <ClInclude Include="frame_analyzer.h" />
     <ClInclude Include="frame_captor.h" />
     <ClInclude Include="console_logger.h" />
+    <ClInclude Include="json\json-forwards.h" />
+    <ClInclude Include="json\json.h" />
     <ClInclude Include="oxford_client.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="project_oxford.h" />

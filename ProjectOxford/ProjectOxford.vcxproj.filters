@@ -40,6 +40,9 @@
     <ClCompile Include="face.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="jsoncpp.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
@@ -76,6 +79,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="face.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json-forwards.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>
