@@ -34,6 +34,12 @@
     <ClCompile Include="project_oxford.cpp">
       <Filter>Source files</Filter>
     </ClCompile>
+    <ClCompile Include="oxford_client.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="face.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Makefile" />
@@ -64,6 +70,12 @@
       <Filter>Header files</Filter>
     </ClInclude>
     <ClInclude Include="config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="oxford_client.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="face.h">
       <Filter>Header files</Filter>
     </ClInclude>
   </ItemGroup>

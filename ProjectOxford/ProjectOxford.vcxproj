@@ -73,9 +73,11 @@
     <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
     <NMakeOutput>$(ProjectDir)ProjectOxford-Windows.vgdbsettings</NMakeOutput>
-    <IncludePath />
+    <IncludePath>
+    </IncludePath>
     <ReferencePath />
-    <LibraryPath />
+    <LibraryPath>
+    </LibraryPath>
     <NMakeIncludeSearchPath>d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include\c++;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include\c++\x86_64-w64-mingw32;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include\c++\backward;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include;d:\sysgcc\threads-mingw64\lib\gcc\x86_64-w64-mingw32\4.8.1\include-fixed;d:\sysgcc\threads-mingw64\x86_64-w64-mingw32\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeForcedIncludes>$(ProjectDir)\gcc_Windows.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
     <NMakePreprocessorDefinitions>__VisualGDB_CFG_Windows;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -83,9 +85,11 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="face.cpp" />
     <ClCompile Include="frame_analyzer.cpp" />
     <ClCompile Include="frame_captor.cpp" />
     <ClCompile Include="console_logger.cpp" />
+    <ClCompile Include="oxford_client.cpp" />
     <ClCompile Include="person.cpp" />
     <ClCompile Include="project_oxford.cpp" />
   </ItemGroup>
@@ -97,9 +101,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="config.h" />
+    <ClInclude Include="face.h" />
     <ClInclude Include="frame_analyzer.h" />
     <ClInclude Include="frame_captor.h" />
     <ClInclude Include="console_logger.h" />
+    <ClInclude Include="oxford_client.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="project_oxford.h" />
   </ItemGroup>

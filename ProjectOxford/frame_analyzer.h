@@ -3,6 +3,7 @@
 #include <vector>
 
 #include "person.h"
+#include "oxford_client.h"
 
 using namespace std;
 
@@ -12,6 +13,6 @@ public:
 	frame_analyzer();
 	~frame_analyzer();
 	
-	person get_person(vector<char> &frame);
+	person get_person(vector<char> pFilePath);
 };
 
